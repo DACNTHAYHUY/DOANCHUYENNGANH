@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{89B150E6-4ECA-4B57-9DDE-071262243EF6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DATN</RootNamespace>
+    <AssemblyName>DATN</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\Chitiethoadonbh_Controller.cs" />
+    <Compile Include="Controllers\Hoadonbanhang_Controller.cs" />
+    <Compile Include="Controllers\Khachhang_Controller.cs" />
+    <Compile Include="Controllers\Kho_Controller.cs" />
+    <Compile Include="Controllers\Nhacungcap_Controller.cs" />
+    <Compile Include="Controllers\Nhanvien_Controller.cs" />
+    <Compile Include="Controllers\Sanpham_Controller.cs" />
+    <Compile Include="Models\Chitiethoadonbh_Model.cs" />
+    <Compile Include="Models\Hoadonbanhang_Model.cs" />
+    <Compile Include="Models\Khachhang_Model.cs" />
+    <Compile Include="Models\Kho_Model.cs" />
+    <Compile Include="Models\Nhacungcap_Model.cs" />
+    <Compile Include="Models\Nhanvien_Model.cs" />
+    <Compile Include="Models\Sanpham_Model.cs" />
+    <Compile Include="Views\Capnhatthongtin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Capnhatthongtin.Designer.cs">
+      <DependentUpon>Capnhatthongtin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ChinhsuaHoadon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ChinhsuaHoadon.Designer.cs">
+      <DependentUpon>ChinhsuaHoadon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Chitiethoadonbh_View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Chitiethoadonbh_View.Designer.cs">
+      <DependentUpon>Chitiethoadonbh_View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dangnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dangnhap.Designer.cs">
+      <DependentUpon>Dangnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Xuly.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Doimatkhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Doimatkhau.Designer.cs">
+      <DependentUpon>Doimatkhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Hoadonbanhang_View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Hoadonbanhang_View.Designer.cs">
+      <DependentUpon>Hoadonbanhang_View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HoadonKCCTT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\HoadonKCCTT.Designer.cs">
+      <DependentUpon>HoadonKCCTT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HoadonKCTT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\HoadonKCTT.Designer.cs">
+      <DependentUpon>HoadonKCTT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Khachhang_View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Khachhang_View.Designer.cs">
+      <DependentUpon>Khachhang_View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Kho_View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Kho_View.Designer.cs">
+      <DependentUpon>Kho_View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Nhacungcap_View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Nhacungcap_View.Designer.cs">
+      <DependentUpon>Nhacungcap_View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Nhanvien_View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Nhanvien_View.Designer.cs">
+      <DependentUpon>Nhanvien_View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Sanpham_View.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Sanpham_View.Designer.cs">
+      <DependentUpon>Sanpham_View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Trangchinh1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Trangchinh1.Designer.cs">
+      <DependentUpon>Trangchinh1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Views\Capnhatthongtin.resx">
+      <DependentUpon>Capnhatthongtin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ChinhsuaHoadon.resx">
+      <DependentUpon>ChinhsuaHoadon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Chitiethoadonbh_View.resx">
+      <DependentUpon>Chitiethoadonbh_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dangnhap.resx">
+      <DependentUpon>Dangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Doimatkhau.resx">
+      <DependentUpon>Doimatkhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Hoadonbanhang_View.resx">
+      <DependentUpon>Hoadonbanhang_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\HoadonKCCTT.resx">
+      <DependentUpon>HoadonKCCTT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\HoadonKCTT.resx">
+      <DependentUpon>HoadonKCTT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Khachhang_View.resx">
+      <DependentUpon>Khachhang_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Kho_View.resx">
+      <DependentUpon>Kho_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Nhacungcap_View.resx">
+      <DependentUpon>Nhacungcap_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Nhanvien_View.resx">
+      <DependentUpon>Nhanvien_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Sanpham_View.resx">
+      <DependentUpon>Sanpham_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Trangchinh1.resx">
+      <DependentUpon>Trangchinh1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
